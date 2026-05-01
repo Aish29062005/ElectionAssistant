@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicLearn – Election Assistant</title>
+    <meta name="description" content="Explore how elections work step by step and test what you learn.">
+    
+    <!-- Styles & Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="app-header">
+        <h1>CivicLearn</h1>
+        <p>Your simple guide to understanding the election process, step by step.</p>
+    </header>
+
+    <main class="app-container">
+
+        <!-- Timeline Section -->
+        <section class="timeline-pane" aria-label="Election Process Timeline">
+            <h2>How Elections Work</h2>
+
+            <ul class="timeline" id="timeline-list">
+
+                <li class="timeline-item active" data-stage="0">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>Announcement & Campaigning</h3>
+                        <p>Candidates announce they’re running and begin connecting with voters.</p>
+                    </div>
+                </li>
+
+                <li class="timeline-item" data-stage="1">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Primaries & Caucuses</h3>
+                        <p>Parties choose their official candidates through voting events.</p>
+                    </div>
+                </li>
+
+                <li class="timeline-item" data-stage="2">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>National Conventions</h3>
+                        <p>Parties formally nominate their candidates and unite their supporters.</p>
+                    </div>
+                </li>
+
+                <li class="timeline-item" data-stage="3">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h3>General Campaign</h3>
+                        <p>Candidates campaign nationwide to win over voters.</p>
+                    </div>
+                </li>
+
+                <li class="timeline-item" data-stage="4">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h3>Election Day</h3>
+                        <p>Citizens cast their votes to choose their leader.</p>
+                    </div>
+                </li>
+
+                <li class="timeline-item" data-stage="5">
+                    <div class="timeline-marker">6</div>
+                    <div class="timeline-content">
+                        <h3>Final Steps & Inauguration</h3>
+                        <p>The winner is officially confirmed and sworn into office.</p>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- Details + Quiz Section -->
+        <section class="details-pane" aria-live="polite">
+
+            <div id="stage-details" class="stage-details">
+                <h2 id="stage-title">Announcement & Campaigning</h2>
+                <p id="stage-description">
+                    This is where everything begins. Candidates announce their plans to run for office,
+                    build their teams, travel across regions, and share their ideas to gain public support.
+                </p>
+            </div>
+
+            <!-- Quiz -->
+            <div class="quiz-section">
+                <h3>Quick Check</h3>
+
+                <div id="quiz-container" class="quiz-container">
+                    
+                    <p id="quiz-question" class="quiz-question">
+                        Why is early campaigning important?
+                    </p>
+
+                    <div id="quiz-options" class="quiz-options">
+                        <button class="quiz-option" data-index="0">
+                            To cast the final vote
+                        </button>
+                        <button class="quiz-option" data-index="1">
+                            To build public support and awareness
+                        </button>
+                        <button class="quiz-option" data-index="2">
+                            To swear in the winner
+                        </button>
+                        <button class="quiz-option" data-index="3">
+                            To officially select the party candidate
+                        </button>
+                    </div>
+
+                    <div id="quiz-feedback" class="quiz-feedback hidden"></div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
